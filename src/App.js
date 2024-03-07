@@ -66,7 +66,7 @@ it to the vc_request_url to get back the VC. </Typography></Box>
      
 
       <Box border={1} sx={{p:2, my: 3}} >
-<h2>OR, Mock the Wallet DIDAuth call for a deeplink</h2>
+<h2>Mock the Wallet DIDAuth call for a deeplink</h2>
 
                  <TextField 
                     label="Deep Link"
