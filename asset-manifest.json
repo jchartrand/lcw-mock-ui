@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/lcw-mock-ui/static/css/main.e6c13ad2.css",
-    "main.js": "/lcw-mock-ui/static/js/main.8a65f7b9.js",
+    "main.js": "/lcw-mock-ui/static/js/main.e79c0fb8.js",
     "static/js/362.50ed56dc.chunk.js": "/lcw-mock-ui/static/js/362.50ed56dc.chunk.js",
     "static/js/453.960aa128.chunk.js": "/lcw-mock-ui/static/js/453.960aa128.chunk.js",
     "static/media/index.cjs": "/lcw-mock-ui/static/media/index.8c6261d5ef321f6756a1.cjs",
     "index.html": "/lcw-mock-ui/index.html",
     "main.e6c13ad2.css.map": "/lcw-mock-ui/static/css/main.e6c13ad2.css.map",
-    "main.8a65f7b9.js.map": "/lcw-mock-ui/static/js/main.8a65f7b9.js.map",
+    "main.e79c0fb8.js.map": "/lcw-mock-ui/static/js/main.e79c0fb8.js.map",
     "362.50ed56dc.chunk.js.map": "/lcw-mock-ui/static/js/362.50ed56dc.chunk.js.map",
     "453.960aa128.chunk.js.map": "/lcw-mock-ui/static/js/453.960aa128.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8a65f7b9.js"
+    "static/js/main.e79c0fb8.js"
   ]
 }
