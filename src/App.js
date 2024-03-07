@@ -30,11 +30,15 @@ const App = () => {
     <AppBar position='inline'><Toolbar>Learner Credential Wallet Mock</Toolbar></AppBar>
     <Container>
 
-<Box><Typography variant="body" >You have two choices here. Generate a 
-DIDAuth for a given challenge, or provide a deeplink from which the code will
-extract the challenge and the vc_request_uri then generate a DIDAuth and submit
+<Box sx={{m:6}}><Typography variant="h6" >You have two choices here: <br/><br/>
+1. Generate a 
+DIDAuth for a given challenge, which you can then use in the call to an issuer's exchange
+endpoint. <br/>
+2. Provide a deeplink from which the code will
+extract the challenge and the vc_request_url then generate a DIDAuth and submit
 it to the vc_request_url to get back the VC. </Typography></Box>
-       
+
+ <Box border={1} sx={{p:2}}>
             <h2>Generate a DIDAuth for a challenge</h2>
                 <TextField 
                     label="Challenge"
@@ -50,15 +54,18 @@ it to the vc_request_url to get back the VC. </Typography></Box>
 
 <Button sx={{mb: 4}} variant="outlined" color="secondary" onClick={handleDidAuthClick}>Generate DIDAuth</Button>
 
-                  <h3>Constructed DIDAuth:</h3>
 {didAuth &&
+             <>    <h3>Constructed DIDAuth:</h3>
+
             <pre>{JSON.stringify(didAuth, null, 2)}</pre>
+            </> 
 }         
 
-
+</Box>
         
-      <Divider variant="fullWidth" sx={{ opacity: 5 }} />
+     
 
+      <Box border={1} sx={{p:2, my: 3}} >
 <h2>OR, Mock the Wallet DIDAuth call for a deeplink</h2>
 
                  <TextField 
@@ -73,12 +80,12 @@ it to the vc_request_url to get back the VC. </Typography></Box>
                     sx={{mb: 3}}
                  />
                   <Button sx={{mb: 4}} variant="outlined" color="secondary" onClick={handleDeepLinkClick}>Handle Deep Link</Button>
-           
+                  {response && <>          
                   <h3>Response from Server:</h3>
-{response &&
-            <pre>{JSON.stringify(response, null, 2)}</pre>
-}
 
+            <pre>{JSON.stringify(response, null, 2)}</pre></> 
+}
+</Box>
        
         </Container>
 
