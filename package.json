@@ -1,6 +1,7 @@
 {
   "name": "lcw-mock-ui",
   "version": "0.1.0",
+  "homepage": "https://jchartrand.github.io/lcw-mock-ui",
   "private": true,
   "dependencies": {
     "@digitalcredentials/lcw-mock": "github:digitalcredentials/lcw-mock#jchartrand-first-crack",

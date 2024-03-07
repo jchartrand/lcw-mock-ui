@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { TextField, Button, AppBar, Toolbar, Divider, Chip } from "@mui/material";
+import { TextField, Button, AppBar, Toolbar, Divider, Box, Typography } from "@mui/material";
 import { Container } from '@mui/system';
 import { getDIDAuth, mockLCW } from "@digitalcredentials/lcw-mock";
 const App = () => {
@@ -30,6 +30,10 @@ const App = () => {
     <AppBar position='inline'><Toolbar>Learner Credential Wallet Mock</Toolbar></AppBar>
     <Container>
 
+<Box><Typography variant="body" >You have two choices here. Generate a 
+DIDAuth for a given challenge, or provide a deeplink from which the code will
+extract the challenge and the vc_request_uri then generate a DIDAuth and submit
+it to the vc_request_url to get back the VC. </Typography></Box>
        
             <h2>Generate a DIDAuth for a challenge</h2>
                 <TextField 
